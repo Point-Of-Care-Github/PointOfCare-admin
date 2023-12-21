@@ -34,7 +34,7 @@ const BarChartBox = ({chartData}) => {
               labelStyle={{ display: 'none' }}
               cursor={{ fill: 'none' }}
             />
-            <Bar dataKey="appointments" fill="#088F8F" />
+            <Bar dataKey="appointments" fill="#FFEE51" />
           </BarChart>
         </ResponsiveContainer>
       </div>

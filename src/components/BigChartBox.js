@@ -76,22 +76,22 @@ const BigChartBox = () => {
               type="monotone"
               dataKey="Breast"
               stackId="1"
-              stroke="#AFE1AF"
-              fill="#AFE1AF"
+              stroke="#F9A3A3"
+              fill="#F9A3A3"
             />
             <Area
               type="monotone"
               dataKey="Chest"
               stackId="1"
-              stroke="#478778"
-              fill="#478778"
+              stroke="#FFBEBE"
+              fill="#FFBEBE"
             />
             <Area
               type="monotone"
               dataKey="Kidney"
               stackId="1"
-              stroke="#5F9EA0"
-              fill="#5F9EA0"
+              stroke="#FFD0D0"
+              fill="#FFD0D0"
             />
           </AreaChart>
         </ResponsiveContainer>

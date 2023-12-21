@@ -16,7 +16,6 @@ import {
   chartBoxRadiologist,
   chartBoxUser,
 } from '../data';
-
 const HomeContainer = styled.div`
   display: grid;
   gap: 20px;
@@ -28,7 +27,7 @@ const HomeContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -36,8 +35,12 @@ const HomeContainer = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 
-  @media (min-width: 768px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     grid-auto-rows: minmax(120px, auto);
+
+    & > div:nth-child(7) {
+      display: none;
+    }
   }
 `;
 
@@ -61,19 +64,15 @@ const Box7 = styled(Box)`
   }
 `;
 
-// Define the functional component
 const Home = () => {
-  
   return (
     <HomeContainer>
-      
       <Box>
         <ChartBox {...chartBoxUser} />
       </Box>
       <Box>
         <ChartBoxDoc {...chartBoxDoctor} />
       </Box>
-      
       <Box>
         <ChartBoxPat {...chartBoxPatient} />
       </Box>
